@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PORTOFOLIO
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="portofolio.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nature.css">
+</head>
+<script src="portofolio.js"></script>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+          </div>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        
+      </div>
+      
+      <div style="padding-left:16px">
+
+    <div id="container" class="container">
+
+
+    <h2>
+        
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+    
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                
+    
+                <div class="container">
+
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required><br>
+                    <button type="submit">Login</button><br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+    
+                <div class="container" style="background-color:#dddcdc">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+      
+        <h1>Build your own<br>
+            ONLINE PORTOFOLIO
+        </h1>
+    </div>
+    </h2>
+
+    
+    <h3>Professional Photos</h3>
+    
+
+    <div id="button" class="click">
+        <ul id="top-menu">
+
+            <button onclick="document.getElementById('natimg').style.display='block'" style="width:auto;">Nature</button>
+            <div id="natimg" class="galerie1">
+
+                <form class="galerie1-content animate" action="/action_page.php" method="post"></form>
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('natimg').style.display='none'" class="close";
+                        title="Close galerie1">&times;
+                    </span>
+                     <img src="1.jpg" height="500%">
+                     <img src="2.jpg" height="500%">
+                     <img src="3.jpg" height="500%">
+                </div>
+            
+            </div>
+
+            <li><a href="http://127.0.0.1:5500/arhitecture.html" target="_blank">Arhitecture</a></li>
+            <li><a href="http://127.0.0.1:5500/animals.html" target="_blank">Animals</a></li>
+        </ul>
+    </div>
+    
+    <p> Feel free to register and to add the most inspirational
+        photos of yours.
+    </p>
+    
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>
