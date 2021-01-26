@@ -1,0 +1,11 @@
+
+tr, th, td{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+ 
+}
+thead{
+    color:rgb(27, 25, 56);
+    background-color: rgb(198, 236, 228);
+}

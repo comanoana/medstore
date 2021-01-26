@@ -1,0 +1,22 @@
+[
+    {
+        "Drugs name": "Ibuprofen",
+        "Categories": "AINS",
+        "Expiration date": "05.2021"
+    },
+    {
+        "Drugs name": "Algocalmin",
+        "Categories": "AINS",
+        "Expiration date": "10.2020"
+    },
+    {
+        "Drugs name": "Lizinopril",
+        "Categories": "Inhibitor Eca",
+        "Expiration date": "03.2019"
+    },
+    {
+        "Drugs name": "Captopril",
+        "Categories": "Inhibitor Eca",
+        "Expiration date": "07.2023"
+    }
+]
