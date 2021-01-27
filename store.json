@@ -1,22 +1,30 @@
 [
-    {
-        "Drugs name": "Ibuprofen",
-        "Categories": "AINS",
-        "Expiration date": "05.2021"
+    {   "id":"3a33",
+        "drugName": "Ibuprofen",
+        "category": "AINS",
+        "expirationDay": "05.2021",
+        "link": "https://www.anm.ro/_/_PRO/PRO_8318_09.11.15.pdf",
+        "quantity":"5"
     },
-    {
-        "Drugs name": "Algocalmin",
-        "Categories": "AINS",
-        "Expiration date": "10.2020"
+    {   "id":"666f",
+        "drugName": "Algocalmin",
+        "category": "AINS",
+        "expirationDay": "10.2020",
+        "link":"https://www.anm.ro/_/_PRO/PRO_10965_11.09.18.pdf",
+        "quantity":"12"
     },
-    {
-        "Drugs name": "Lizinopril",
-        "Categories": "Inhibitor Eca",
-        "Expiration date": "03.2019"
+    {    "id":"2ee34",
+        "drugName": "Lizinopril",
+        "category": "Inhibitor Eca",
+        "expirationDay": "03.2019",
+        "link":"https://www.anm.ro/_/_PRO/PRO_8443_27.11.15.pdf",
+        "quantity":"15"
     },
-    {
-        "Drugs name": "Captopril",
-        "Categories": "Inhibitor Eca",
-        "Expiration date": "07.2023"
+    {    "id":"12ee34",
+        "drugName": "Captopril",
+        "category": "Inhibitor Eca",
+        "expirationDay": "07.2023",
+        "link":"https://www.anm.ro/_/_PRO/PRO_8443_27.11.15.pdf",
+        "quantity":"6"
     }
 ]

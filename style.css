@@ -1,4 +1,7 @@
-
+#table-list{
+    border-collapse: collapse;
+ 
+}
 tr, th, td{
     padding: 10px;
     border: 1px solid rgb(49, 18, 18);
@@ -11,8 +14,11 @@ thead{
 }
 
 .button{ 
+    padding:30;
+    margin-bottom:20px;
     font-size: 30px;
     border-radius:12px;
+    width:200px;
     color: white;
     background-color:teal;
     transition: background-color.5s;
