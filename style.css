@@ -9,3 +9,18 @@ thead{
     color:rgb(27, 25, 56);
     background-color: rgb(198, 236, 228);
 }
+
+.button{ 
+    font-size: 30px;
+    border-radius:12px;
+    color: white;
+    background-color:teal;
+    transition: background-color.5s;
+
+}
+.button:hover{
+    background-color:white;
+    color:teal;
+   
+
+}
