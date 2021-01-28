@@ -24,7 +24,7 @@ function getDrugHTML(drug){
         <td>${drug.category}</td>
         <td>${drug.expirationDay}</td>
         <td><a target="_blanck" href="${drug.link}">Prospectus</a></td>
-        <td>${drug.quantity}</td>
+        <td>${drug.amount}</td>
         <td>
             <a href="#" class="delete-row">&#10006;</a>
             <a href="#" class="edit-row">&#9998;</a>

@@ -4,7 +4,7 @@
         "category": "AINS",
         "expirationDay": "05.2021",
         "link": "https://www.anm.ro/_/_PRO/PRO_8318_09.11.15.pdf",
-        "quantity":"5",
+        "amount":"5",
         "isExpired" : true
     },
     {   "id":"666f",
@@ -12,7 +12,7 @@
         "category": "AINS",
         "expirationDay": "10.2020",
         "link":"https://www.anm.ro/_/_PRO/PRO_10965_11.09.18.pdf",
-        "quantity":"12",
+        "amount":"12",
         "isExpired" :false
     },
     {    "id":"2ee34",
@@ -20,7 +20,7 @@
         "category": "Inhibitor Eca",
         "expirationDay": "03.2019",
         "link":"https://www.anm.ro/_/_PRO/PRO_8443_27.11.15.pdf",
-        "quantity":"15",
+        "amount":"15",
         "isExpired" :false
     },
     {    "id":"12ee34",
@@ -28,7 +28,7 @@
         "category": "Inhibitor Eca",
         "expirationDay": "07.2023",
         "link":"https://www.anm.ro/_/_PRO/PRO_8443_27.11.15.pdf",
-        "quantity":"6",
+        "amount":"6",
         "isExpired" :false
     }
 ]
