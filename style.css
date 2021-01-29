@@ -2,12 +2,14 @@
     border-collapse: collapse;
  
 }
+
 tr, th, td{
     padding: 10px;
     border: 1px solid rgb(156, 111, 111);
     text-align: center;
  
 }
+
 th{
     color:white;
 }
@@ -19,29 +21,31 @@ thead{
 .button{ 
     padding:30;
     margin-bottom:20px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius:12px;
-    width:200px;
+    width:187px;
     color: white;
-    background-color:rgb(95, 66, 66);
+    background-color:rgb(97, 100, 96);
     transition: background-color.5s;
-
 }
 .button:hover{
     background-color:white;
     color:rgb(117, 128, 128);
-   
-
 }
+
 body{
-    padding: 70px;
+    padding: 120px;
     display: block;
     margin: 8px;
 }
-button
-{
+
+button{
     border-radius: 12px;
 }
+
 td{
     border-radius: 12px;
+}
+#searchbar{
+    display: inline;
 }
