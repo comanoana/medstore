@@ -6,6 +6,7 @@ function loadList(){
     .then (data => {
     allDrugs = data;
     insertDrugs(data);
+    verifyIfDrugIsExpired(allDrugs);
     });
 };
 
@@ -18,7 +19,8 @@ function getDrugsHTML(drugs){
     return drugs.map(getDrugHTML).join("");
 }
 
-function getDrugHTML(drug){
+function getDrugHTML(drug) {
+        
         return `<tr>
         <td>${drug.drugName}</td>
         <td>${drug.category}</td>
@@ -56,7 +58,25 @@ function addEventListeners() {
     allBtn.addEventListener("click", (e) => {
         insertDrugs(allDrugs)   
     })
-} 
+}
+
+function verifyIfDrugIsExpired(allDrugs) {
+    let currentTime = new Date();
+    currentTime.getTime();
+    allDrugs.forEach(element => {
+        var expDate = new Date(element.expirationDay);
+        var curentDate = new Date();
+        if (expDate.getTime() < curentDate.getTime()){
+            element.isExpired = true
+        }
+    });
+}
+
+function setCurrentDayAsMinForDateInput() {
+     var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("date-input")[0].setAttribute('min', today);
+}
 
 loadList();
 addEventListeners();
+setCurrentDayAsMinForDateInput();

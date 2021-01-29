@@ -11,4 +11,4 @@ Inventory-app
 -[x] add three buttons in html-[save, edit, delete]
 -[x] add functionality to the save/edit/delete buttons in js
 -[x] add three buttons in html [expired,unexpired,all]
--[] add functionality to the expired/unexpired/all buttons in js
+-[x] add functionality for the expired/unexpired/all buttons in js
