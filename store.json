@@ -30,5 +30,13 @@
         "link":"https://www.anm.ro/_/_PRO/PRO_8443_27.11.15.pdf",
         "amount":"6",
         "isExpired" : true
+    },
+    {   "id":"432",
+        "drugName": "Paduden",
+        "category": "AINS",
+        "expirationDay": "07.27.2022",
+        "link": "...",
+        "amount":"2",
+        "isExpired" : false
     }
 ]
