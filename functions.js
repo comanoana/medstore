@@ -80,3 +80,4 @@ function setCurrentDayAsMinForDateInput() {
 loadList();
 addEventListeners();
 setCurrentDayAsMinForDateInput();
+
