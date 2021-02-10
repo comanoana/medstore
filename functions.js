@@ -15,6 +15,7 @@ export function loadList(){
     .then(res => res.json())
     .then(data =>{
     allDrugs = data;
+    console.log(allDrugs)
     insertDrugs(data);
     verifyIfDrugIsExpired(allDrugs);
     });
@@ -44,7 +45,7 @@ function getExpiredDrugHTML(){
 }
 
 function getUnexpiredDrugHTML() {
-    let unexpiredDrugs = allDrugs.filter(drug => drug.isExpired == false)
+    let unexpiredDrugs = allDrugs.filter(drug => !drug.isExpired)
     insertDrugs(unexpiredDrugs)
 }
 
