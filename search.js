@@ -46,14 +46,18 @@ function searchDrugs(text) {
     const expirationDay = document.querySelector("input[name=dateInput]").value;
     const link = document.querySelector("input[name=drugInfo]").value;
     const amount = document.querySelector("input[name=amount]").value;
-    
+    const isExpired = checkIfDrugIsExpired(expirationDay)
 
+    console.log("IS EXPIRED", isExpired)
+    console.log("EXPIRATION DAY", expirationDay)
+    
     const drug = {
         drugName,
         category,
         expirationDay,
         link,
-        amount
+        amount,
+        isExpired
     };
     console.info('saving...', drug, JSON.stringify(drug));
 
@@ -71,7 +75,16 @@ function searchDrugs(text) {
         });
 }
 
+function checkIfDrugIsExpired(expirationDay) {
+    var isExpired = false;
+    var expDate = new Date(expirationDay);
+    var curentDate = new Date();
+    if (expDate.getTime() < curentDate.getTime()){
+        isExpired = true 
+    }
 
+    return isExpired;
+}
 
 const saveBtn = document.querySelector("#addDrug");
 saveBtn.addEventListener("click", () => {
