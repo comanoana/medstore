@@ -3,19 +3,19 @@ import{ editId, updateDrugs } from './edit-delete.js';
 
 export const API = {
     CREATE: {
-        URL:"http://localhost:3000/medstore-json/create",
+        URL:"http://localhost:3000/medstore/create",
         METHOD: "POST"
     },
     READ:{
-        URL:"http://localhost:3000/medstore-json/",
+        URL:"http://localhost:3000/medstore/",
         METHOD: "GET"
     },
     UPDATE:{
-        URL:"http://localhost:3000/medstore-json/update",
+        URL:"http://localhost:3000/medstore/update",
         METHOD: "PUT"
     },
     DELETE:{
-        URL:"http://localhost:3000/medstore-json/delete",
+        URL:"http://localhost:3000/medstore/delete",
         METHOD: "DELETE"
     }
 };
