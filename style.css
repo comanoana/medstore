@@ -1,5 +1,10 @@
-
-html,body {
+body{
+  margin:0px;
+  padding:0px;
+}
+body {
+  width:80%;
+  max-width:1000px;
     height: 100%;
     background-repeat: no-repeat;
   }
@@ -16,12 +21,13 @@ html,body {
        width: 70%;
         position: absolute;
         top: 60%;
-        left: 50%;
+        left: 45%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
   }
   table {
-    width: 800px;
+    margin-top:5%;
+    width:90%;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -67,14 +73,14 @@ html,body {
     display: inline;
     position: absolute;
     top: 44%;
-    left: 23%;
+    left: 18%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
 .inputs{
     position: absolute;
     top: 40%;
-    left: 39%;
+    left: 30%;
     
 }
 
@@ -177,4 +183,12 @@ h1::before {
   }
 }
 
+@media (max-width:600px){
+#table-list .inputs{
+    flex-direction: column; 
+    display:flex;
+}
+#table-list{
+  margin-top: 150px;
+}}
 
