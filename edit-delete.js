@@ -4,7 +4,7 @@ import {allDrugs} from './functions.js';
 
 export let editId;
 
- export function updateDrugs(){
+export function updateDrugs(){
     const drugName = document.querySelector("#table-list input[name=drugName]").value;
     const category = document.querySelector("input[name=drugCategory]").value;
     const expirationDay = document.querySelector("input[name=dateInput]").value;
@@ -12,7 +12,7 @@ export let editId;
     const amount = document.querySelector("input[name=amount]").value;
 
     const drug = {
-        id: editId,
+        id:editId,
         drugName,
         category,
         expirationDay,
@@ -32,8 +32,8 @@ export let editId;
       .then(res => res.json())
         .then(r => { 
              console.warn(r);  
-             if (r.success){
-              loadList();
+            if (r.success){
+            loadList();
         }
     }
 )};
@@ -50,15 +50,17 @@ export function deleteDrugs(id){
         .then( r => {
             console.warn(r);
             if (r.success) {
-                loadList();
+               loadList();
             }
         });
 };
 
 export function populateCurrentDrug(id){
-    var drug= allDrugs.find(drug=>drug.id===id);
+    var drug = allDrugs.find(drug => drug.id == id);
 
-    editId =id;
+    console.log("Drugs =>", allDrugs);
+
+    editId = id;
     const drugName = document.querySelector("#table-list input[name=drugName]");
     const category = document.querySelector("input[name=drugCategory]");
     const expirationDay = document.querySelector("input[name=dateInput]");
