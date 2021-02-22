@@ -12,3 +12,10 @@ Inventory-app
 -[x] add functionality to the save/edit/delete buttons in js
 -[x] add three buttons in html [expired,unexpired,all]
 -[x] add functionality for the expired/unexpired/all buttons in js
+
+## FEATURES
+
+[] Main screen appearing with the drugs table
+[] Search for drug 
+[] Expired, unexpired, show all buttons
+[] Add drug with name, category, date, amount 
