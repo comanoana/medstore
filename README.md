@@ -19,3 +19,14 @@ Inventory-app
 - [] Search for drug 
 - [] Expired, unexpired, show all buttons
 - [] Add drug with name, category, date, amount 
+
+### Start app
+
+- open API folder in visual studio
+- open UI folder in visual studio
+- in Xampp - start Apache , MySQL
+- terminal npm run devstart
+- Shift+Ctrl+P - Browser Sync: Server mode in browser
+- * & enter
+- localhost:80 - phpMyAdmin (database)
+
