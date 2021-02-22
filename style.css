@@ -1,30 +1,11 @@
-body{
-  margin:0px;
-  padding:0px;
-}
 body {
-  width:80%;
-  max-width:1000px;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-  
-  body {
     margin: 0;
     background: -webkit-linear-gradient(45deg, #49a09d, #151231);
     background: linear-gradient(45deg, #68b9b7, #531f63);
     font-family: sans-serif;
     font-weight: 100;
   }
-  
-  .container {
-       width: 70%;
-        position: absolute;
-        top: 60%;
-        left: 45%;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-  }
+
   table {
     margin-top:5%;
     width:90%;
@@ -67,6 +48,11 @@ body {
 
 #table-list{
     border-collapse: collapse;
+    width: 70%;
+    position:absolute;
+    top: 40%;
+    left:10%;
+   
 }
 
 #searchbar{
@@ -80,8 +66,7 @@ body {
 .inputs{
     position: absolute;
     top: 40%;
-    left: 30%;
-    
+    left: 30%;   
 }
 
 tr, th, td{
@@ -98,19 +83,17 @@ thead{
 }
 
 .button{ 
-    padding:7px 15px;
     font-size: 15px;
     border-radius:5px;
     width:187px;
+    height: 40px;
     cursor: pointer;
     color: rgb(20, 17, 17);
     background-color:rgb(182, 150, 152);
     transition: background-color.5s;
-     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.button:hover {
-    background-color: #4f6350
-}
+
 .button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
