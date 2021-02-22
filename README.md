@@ -27,6 +27,6 @@ Inventory-app
 - in Xampp - start Apache , MySQL
 - terminal npm run devstart
 - Shift+Ctrl+P - Browser Sync: Server mode in browser
-- * & enter
+- star(8) & enter
 - localhost:80 - phpMyAdmin (database)
 
