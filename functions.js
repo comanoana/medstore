@@ -13,11 +13,11 @@ export function insertDrugs(drugs) {
 export function loadList(){
     fetch(API.READ.URL)
     .then(res => res.json())
-    .then(data =>{
-    allDrugs = data;
-    console.log(allDrugs)
-    insertDrugs(data);
-    verifyIfDrugIsExpired(allDrugs);
+    .then(data => {
+        allDrugs = data;
+        console.log(allDrugs)
+        insertDrugs(data);
+        verifyIfDrugIsExpired(allDrugs);
     });
 };
 
@@ -26,8 +26,7 @@ function getDrugsHTML(drugs){
 }
 
 function getDrugHTML(drug) {
-        
-        return `<tr>
+    return `<tr>
         <td>${drug.drugName}</td>
         <td>${drug.category}</td>
         <td>${drug.expirationDay}</td>
@@ -36,7 +35,8 @@ function getDrugHTML(drug) {
         <td>
             <a href="#" class="delete-row" data-id="${drug.id}">&#10006;</a>
             <a href="#" class="edit-row" data-id="${drug.id}">&#9998;</a>
-        </td>`
+        </td>
+    </tr>`
 }
 
 function getExpiredDrugHTML(){
@@ -79,12 +79,11 @@ function addEventListeners() {
 }
 
 function verifyIfDrugIsExpired(allDrugs) {
-    let currentTime = new Date();
-    currentTime.getTime();
+    const currentTime = new Date();
+    const time = currentTime.getTime();
     allDrugs.forEach(element => {
         var expDate = new Date(element.expirationDay);
-        var curentDate = new Date();
-        if (expDate.getTime() < curentDate.getTime()){
+        if (expDate.getTime() < time){
             element.isExpired = true
         }
     });
