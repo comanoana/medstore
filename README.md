@@ -15,7 +15,7 @@ Inventory-app
 
 ## FEATURES
 
-[] Main screen appearing with the drugs table
-[] Search for drug 
-[] Expired, unexpired, show all buttons
-[] Add drug with name, category, date, amount 
+- [] Main screen appearing with the drugs table
+- [] Search for drug 
+- [] Expired, unexpired, show all buttons
+- [] Add drug with name, category, date, amount 
