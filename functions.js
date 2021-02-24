@@ -16,8 +16,8 @@ export function loadList(){
     .then(data => {
         allDrugs = data;
         console.log(allDrugs)
-        insertDrugs(data);
         verifyIfDrugIsExpired(allDrugs);
+        insertDrugs(allDrugs);
     });
 };
 
@@ -27,6 +27,7 @@ function getDrugsHTML(drugs){
 
 function getDrugHTML(drug) {
     return `<tr>
+        <td><span id="warn" style='font-size:20px;'>&#9888;</span></td>
         <td>${drug.drugName}</td>
         <td>${drug.category}</td>
         <td>${drug.expirationDay}</td>
