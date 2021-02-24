@@ -5,8 +5,11 @@ Inventory-app
 - Bîlc Adina 
 - Coman Oana
 - Vesa Bianca
- 
-## TODO
+
+## Live Preview
+- [Demo](https://comanoana.github.io/medstore/)  
+
+### TODO
 - [x] create a table in html
 - [x] table headers-[Drug name, Category, prospectus links, expiration date]
 - [x] add a json file with drugs
@@ -18,14 +21,14 @@ Inventory-app
 - [x] add three buttons in html [expired,unexpired,all]
 - [x] add functionality for the expired/unexpired/all buttons in js
 
-### FEATURES
+#### FEATURES
 
 - [x] Main screen appearing with the drugs table
 - [x] Search for drug 
 - [x] Expired, unexpired, show all buttons
 - [x] Add drug with name, category, date, amount 
 
-#### Start app
+##### Start app
 
 - open API folder in visual studio
 - open UI folder in visual studio
