@@ -1,5 +1,10 @@
 # medstore
 Inventory-app
+
+## Team
+- Bîlc Adina 
+- Coman Oana
+- Vesa Bianca
  
 ## TODO
 - [x] create a table in html
