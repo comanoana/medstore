@@ -20,6 +20,11 @@ export const API = {
     }
 };
 
+//for demo purposes..
+if(location.host === "github.com"){
+    API.READ.URL = "store.json";
+}
+
 const search = document.getElementById('search');
 search.addEventListener("input", e => {
     const text = e.target.value;
