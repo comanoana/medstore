@@ -3,7 +3,7 @@ Inventory-app
 
 ## Team
 - <a target="_blank" href="https://github.com/bilcadina">Bîlc Adina</a>
--<a target="_blank" href="https://github.com/comanoana">Coman Oana</a>
+- <a target="_blank" href="https://github.com/comanoana">Coman Oana</a>
 - <a target="_blank" href="https://github.com/vbianca">Vesa Bianca</a>
 
 ## Live Preview
