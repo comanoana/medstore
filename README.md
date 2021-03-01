@@ -2,11 +2,10 @@
 Inventory-app
 
 ## Team
-- Bîlc Adina 
-- Coman Oana
-- Vesa Bianca
+- <a target="_blank" href="https://github.com/bilcadina">Bîlc Adina</a>
+- <a target="_blank" href="https://github.com/comanoana">Coman Oana</a>
+- <a target="_blank" href="https://github.com/vbianca">Vesa Bianca</a>
 
-## Live Preview
 - [Demo](https://comanoana.github.io/medstore/)  
 
 ### TODO
