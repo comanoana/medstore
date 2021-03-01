@@ -2,7 +2,6 @@ import { API } from './search-save.js';
 import { deleteDrugs } from './edit-delete.js';
 import { populateCurrentDrug } from './edit-delete.js';
 
-
 export let allDrugs = [];
 
 export function insertDrugs(drugs) {
@@ -15,29 +14,46 @@ export function loadList() {
         .then(res => res.json())
         .then(data => {
             allDrugs = data;
-            console.log(allDrugs)
-            verifyIfDrugIsExpired(allDrugs);
             insertDrugs(allDrugs);
         });
 };
+
+export function loadExpiredList() {
+    fetch(API.EXPIRED.URL)
+    .then(res => res.json())
+    .then(data => {
+        allDrugs = data;
+        insertDrugs(allDrugs);
+    });
+}
+
+export function loadUnexpiredList() {
+    fetch(API.UNEXPIRED.URL)
+    .then(res => res.json())
+    .then(data => {
+        allDrugs = data;
+        insertDrugs(allDrugs);
+    });
+}
 
 function getDrugsHTML(drugs) {
     return drugs.map(getDrugHTML).join("");
 }
 
 function getDrugHTML(drug) {
-    var isExpired;
-    if (getDrugIsExpired(drug)) {
+    const date = setCurrentDay(drug.expirationDay);
+    const currentDate = new Date().toISOString().split('T')[0];
+    let isExpired = 'none';
+    
+    if(currentDate > date){
         isExpired = '';
-    } else {
-        isExpired = 'none'
-    // var isExpired = getDrugIsExpired(drug) ? '' : 'none';
     }
+    
     return `<tr>
         <td><span id="warn" style='font-size:20px;display:${isExpired}'>&#9888;</span></td>
         <td>${drug.drugName}</td>
         <td>${drug.category}</td>
-        <td>${drug.expirationDay}</td>
+        <td>${date}</td>
         <td><a target="_blank" href="${drug.link}">Prospectus</a></td>
         <td>${drug.amount}</td>
         <td>
@@ -47,39 +63,20 @@ function getDrugHTML(drug) {
     </tr>`
 }
 
-function getDrugIsExpired(drug) {
-    const currentTime = new Date();
-    const time = currentTime.getTime();
-    const expirationDateTime = new Date(drug.expirationDay)
-            console.log('time', time);
-        
-    return expirationDateTime.getTime() < time;
-}
-
-function getExpiredDrugHTML() {
-    let expiredDrugs = allDrugs.filter(drug => drug.isExpired == true)
-    insertDrugs(expiredDrugs)
-}
-
-function getNotExpiredDrugHTML() {
-    let notExpiredDrugs = allDrugs.filter(drug => !drug.isExpired)
-    insertDrugs(notExpiredDrugs)
-}
-
 function addEventListeners() {
     const expiredBtn = document.getElementById("expiredBtn")
     expiredBtn.addEventListener("click", (e) => {
-        getExpiredDrugHTML()
+        loadExpiredList();
     })
 
     const notExpiredBtn = document.getElementById("notExpiredBtn")
     notExpiredBtn.addEventListener("click", (e) => {
-        getNotExpiredDrugHTML()
+        loadUnexpiredList();
     })
 
     const allBtn = document.getElementById("allBtn")
     allBtn.addEventListener("click", (e) => {
-        insertDrugs(allDrugs)
+        loadList();
     })
 
     const table = document.querySelector("#table-list tbody");
@@ -95,20 +92,13 @@ function addEventListeners() {
     });
 }
 
-function verifyIfDrugIsExpired(allDrugs) {
-    const currentTime = new Date();
-    const time = currentTime.getTime();
-    allDrugs.forEach(element => {
-        var expDate = new Date(element.expirationDay);
-        if (expDate.getTime() < time) {
-            element.isExpired = true
-        }
-    });
-}
-
 function setCurrentDayAsMinForDateInput() {
     var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("dateInput")[0].setAttribute('min', today);
+}
+
+function setCurrentDay(date) {
+    return date.split('T')[0];
 }
 
 loadList();

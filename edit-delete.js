@@ -20,8 +20,6 @@ export function updateDrugs(){
         amount,
     };
 
-    console.log("Drug", drug);
-
     fetch(API.UPDATE.URL, { 
         method: API.UPDATE.METHOD,
         headers: {
@@ -57,8 +55,6 @@ export function deleteDrugs(id){
 
 export function populateCurrentDrug(id){
     var drug = allDrugs.find(drug => drug.id == id);
-
-    console.log("Drugs =>", allDrugs);
 
     editId = id;
     const drugName = document.querySelector("#table-list input[name=drugName]");

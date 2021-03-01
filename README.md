@@ -30,10 +30,10 @@ Inventory-app
 
 ##### Start app
 
-- open API folder in visual studio
-- open UI folder in visual studio
+- open [node-api-medstore] (https://github.com/comanoana/node-api-medstore) folder in visual studio
+- open [medstore-ui](https://github.com/comanoana/medstore) folder in visual studio
 - in Xampp - start Apache , MySQL
-- terminal npm run devstart
+- open terminal and run: `npm run devstart`
 - Shift+Ctrl+P - Browser Sync: Server mode in browser
 - star(8) & enter
 - localhost:80 - phpMyAdmin (database)

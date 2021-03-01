@@ -17,6 +17,14 @@ export const API = {
     DELETE:{
         URL:"http://localhost:3000/medstore/delete",
         METHOD: "DELETE"
+    },
+    EXPIRED: {
+        URL:"http://localhost:3000/medstore/expired",
+        METHOD: "GET"
+    },
+    UNEXPIRED: {
+        URL:"http://localhost:3000/medstore/unexpired",
+        METHOD: "GET"
     }
 };
 
@@ -39,11 +47,10 @@ function searchDrugs(text) {
     text = text.toLowerCase();
     console.warn("search", text);
     return allDrugs.filter(drug => {
-
-         console.log("!!!!", drug);
-        return drug.drugName.toLowerCase().indexOf(text) > -1;
+        if (isNaN(text)) return drug.drugName.toLowerCase().indexOf(text) > -1;
+        else return drug.expirationDay.indexOf(text) > -1;
     });
-  }
+ }
 
   function saveDrug() {
     const drugName = document.querySelector("input[name=drugName]").value;
@@ -51,19 +58,15 @@ function searchDrugs(text) {
     const expirationDay = document.querySelector("input[name=dateInput]").value;
     const link = document.querySelector("input[name=drugInfo]").value;
     const amount = document.querySelector("input[name=amount]").value;
-    const isExpired = checkIfDrugIsExpired(expirationDay)
 
-    console.log("IS EXPIRED", isExpired)
-    console.log("EXPIRATION DAY", expirationDay)
-    
     const drug = {
         drugName,
         category,
         expirationDay,
         link,
-        amount,
-        isExpired
+        amount
     };
+
     console.info('saving...', drug, JSON.stringify(drug));
 
     fetch(API.CREATE.URL, {
@@ -78,17 +81,6 @@ function searchDrugs(text) {
                 loadList();
             }
         });
-}
-
-function checkIfDrugIsExpired(expirationDay) {
-    var isExpired = false;
-    var expDate = new Date(expirationDay);
-    var curentDate = new Date();
-    if (expDate.getTime() < curentDate.getTime()){
-        isExpired = true 
-    }
-
-    return isExpired;
 }
 
 const saveBtn = document.querySelector("#addDrug");
