@@ -45,7 +45,7 @@ function getDrugHTML(drug) {
     const currentDate = new Date().toISOString().split('T')[0];
     let isExpired = 'none';
     
-    if(currentDate > date){
+    if(currentDate >= date){
         isExpired = '';
     }
     
