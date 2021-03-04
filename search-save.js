@@ -34,6 +34,7 @@ if(location.host === "comanoana.github.io"){
 }
 
 const search = document.getElementById('search');
+console.log(search);
 search.addEventListener("input", e => {
     const text = e.target.value;
     
