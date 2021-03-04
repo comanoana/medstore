@@ -7,7 +7,7 @@ Inventory-app
 - <a target="_blank" href="https://github.com/vbianca">Vesa Bianca</a>
 
 ## Live Preview
-- [Demo](https://comanoana.github.io/medstore/)  
+- [Demo] (https://comanoana.github.io/medstore/)  
 
 ### TODO
 - [x] create a table in html
@@ -31,9 +31,9 @@ Inventory-app
 ##### Start app
 
 - in Xampp - start Apache , MySQL
-- open [node-api-medstore] (https://github.com/comanoana/node-api-medstore) folder in visual studio
+- open [node-api-medstore](https://github.com/comanoana/node-api-medstore) folder in visual studio
 - open terminal and run: `npm run devstart`
-- open [medstore-ui] (https://github.com/comanoana/medstore) folder in visual studio
+- open [medstore-ui](https://github.com/comanoana/medstore) folder in visual studio
 - Shift+Ctrl+P - Browser Sync: Server mode in browser
 - star(8) & enter
 - localhost:80 - phpMyAdmin (database)
