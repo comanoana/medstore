@@ -3,33 +3,33 @@ import{ editId, updateDrugs } from './edit-delete.js';
 
 export const API = {
     CREATE: {
-        URL:"http://localhost:3000/medstore-json/create",
+        URL:"http://localhost:3000/medstore/create",
         METHOD: "POST"
     },
     READ:{
-        URL:"http://localhost:3000/medstore-json",
+        URL:"http://localhost:3000/medstore/",
         METHOD: "GET" 
     },
     UPDATE:{
-        URL:"http://localhost:3000/medstore-json/update",
+        URL:"http://localhost:3000/medstore/update",
         METHOD: "PUT"
     },
     DELETE:{
-        URL:"http://localhost:3000/medstore-json/delete",
+        URL:"http://localhost:3000/medstore/delete",
         METHOD: "DELETE"
     },
     EXPIRED: {
-        URL:"http://localhost:3000/medstore-json/expired",
+        URL:"http://localhost:3000/medstore/expired",
         METHOD: "GET"
     },
     UNEXPIRED: {
-        URL:"http://localhost:3000/medstore-json/unexpired",
+        URL:"http://localhost:3000/medstore/unexpired",
         METHOD: "GET"
     }
 };
 
 //for demo purposes..
-if(location.host === "comanoana.github.io"){
+if(location.host === "comanoana.github.io") {
     API.READ.URL = "store.json";
 }
 

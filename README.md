@@ -7,7 +7,7 @@ Inventory-app
 - <a target="_blank" href="https://github.com/vbianca">Vesa Bianca</a>
 
 ## Live Preview
-- [Demo] (https://comanoana.github.io/medstore/)  
+- [Demo](https://comanoana.github.io/medstore/)  
 
 ### TODO
 - [x] create a table in html
