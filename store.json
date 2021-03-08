@@ -2,4 +2,5 @@
     {"id":7,"drugName":"Ampicilina","category":"antibiotic","expirationDay":"2021-02-22","link":"https://www.anm.ro/_/_PRO/PRO_10663_15.03.18.pdf","amount":"10"},
     {"id":8,"drugName":"Nurofen","category":"antiinflamator","expirationDay":"2021-09-10","link":"https://www.anm.ro/_/_PRO/PRO_8883_22.04.16.pdf","amount":"15"},
     {"id":10,"drugName":"Sindolor","category":"analgezic","expirationDay":"2023-10-10","link":"https://www.anm.ro/_/_PRO/pro_2197_01.12.09.pdf","amount":"12"}
-]
+] 
+            
