@@ -8,7 +8,7 @@ export const API = {
     },
     READ:{
         URL:"http://localhost:3000/medstore/",
-        METHOD: "GET"
+        METHOD: "GET" 
     },
     UPDATE:{
         URL:"http://localhost:3000/medstore/update",
@@ -29,11 +29,12 @@ export const API = {
 };
 
 //for demo purposes..
-if(location.host === "comanoana.github.io"){
+if (location.host === "comanoana.github.io") {
     API.READ.URL = "store.json";
 }
 
 const search = document.getElementById('search');
+console.log(search);
 search.addEventListener("input", e => {
     const text = e.target.value;
     

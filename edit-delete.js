@@ -25,7 +25,7 @@ export function updateDrugs(){
         headers: {
             "Content-Type": "application/json"
        },
-          body: API.UPDATE.METHOD === "GET" ? null: JSON.stringify(drug)
+          body: JSON.stringify(drug)
       })
       .then(res => res.json())
         .then(r => { 
