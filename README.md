@@ -1,4 +1,4 @@
-# medstore
+# medhome
 Inventory-app
 
 ## Team

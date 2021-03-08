@@ -3,27 +3,27 @@ import{ editId, updateDrugs } from './edit-delete.js';
 
 export const API = {
     CREATE: {
-        URL:"http://localhost:3000/medstore/create",
+        URL:"http://localhost:3000/medstore-json/create",
         METHOD: "POST"
     },
     READ:{
-        URL:"http://localhost:3000/medstore/",
-        METHOD: "GET"
+        URL:"http://localhost:3000/medstore-json",
+        METHOD: "GET" 
     },
     UPDATE:{
-        URL:"http://localhost:3000/medstore/update",
+        URL:"http://localhost:3000/medstore-json/update",
         METHOD: "PUT"
     },
     DELETE:{
-        URL:"http://localhost:3000/medstore/delete",
+        URL:"http://localhost:3000/medstore-json/delete",
         METHOD: "DELETE"
     },
     EXPIRED: {
-        URL:"http://localhost:3000/medstore/expired",
+        URL:"http://localhost:3000/medstore-json/expired",
         METHOD: "GET"
     },
     UNEXPIRED: {
-        URL:"http://localhost:3000/medstore/unexpired",
+        URL:"http://localhost:3000/medstore-json/unexpired",
         METHOD: "GET"
     }
 };
