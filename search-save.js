@@ -29,7 +29,7 @@ export const API = {
 };
 
 //for demo purposes..
-if(location.host === "comanoana.github.io") {
+if (location.host === "comanoana.github.io") {
     API.READ.URL = "store.json";
 }
 
