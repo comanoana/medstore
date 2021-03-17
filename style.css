@@ -1,16 +1,9 @@
 body {
-    margin: 0;
-    background-image: url("meds.jpg");
-    background-repeat: no-repeat;
     font-weight: 100;
-  }
-
-  table {
-    margin-top:4%;
-    width:90%;
-    border-collapse: collapse;
-    overflow: hidden;
-    
+    background-image: url(./images/healthcare.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
   th,td {
@@ -24,7 +17,7 @@ body {
     text-align: left;
   }
   thead th {
-    background-color: #70ace4de;
+    background-color:#ccf2f4e5;
     color:rgba(2, 1, 1, 0.733);
   }
   
@@ -35,39 +28,20 @@ body {
   tbody td {
     position: relative;
   }
-  
-  tbody td:hover:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -9999px;
-    bottom: -9999px;
-    background-color: rgba(255, 255, 255, 0.897);
-     z-index: -1;
-  }
 
 #table-list{
     border-collapse: collapse;
-    width: 70%;
-    position:absolute;
-    top: 40%;
-    left:10%;
-   
+    margin: auto;
 }
 
-#searchbar{
-    display: inline;
-    position: absolute;
-    top: 44%;
-    left: 18%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
 .inputs{
-    position: absolute;
-    top: 40%;
-    left: 30%;  
+  position: absolute;
+  margin: auto;
+  display: inline;
+  justify-content: center;
+  width: 100%;
+  left: 15%;
+  top: 45%;
 }
 
 tr, th, td,tfoot{
@@ -80,11 +54,12 @@ tr, th, td,tfoot{
     border-radius:30px;
     width:187px;
     height: 40px;
+    margin-left: 1%;
     cursor: pointer;
-    color: rgb(250, 250, 250);
-    background-color:rgba(122, 109, 106, 0.788);
+    color: black;
+    background-color:rgba(218, 191, 218, 0.747);
     transition: background-color.5s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .button:active {
@@ -100,16 +75,35 @@ tr, th, td,tfoot{
 h1{
     padding: 20px;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color:white;
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top: 15%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: 1.2s slideIn ease-in-out forwards 1s;
+    z-index: 20;
+    opacity:0;
 }
 
-.title{
-  min-height: 100vh;
+#search {
+  margin-right: 3%;
+}
+
+h1::before {
+  content: '';
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  background-color:white;
+  bottom: 3px;
+  line-height: 1.2;
+  animation: 1s underline ease-in-out forwards 2s;
+  mix-blend-mode: screen;
+}
+
+.title {
+  top:1px;
+  min-height: 30vh;
   width:25%;
   left:20%;
   display: flex;
@@ -117,32 +111,20 @@ h1{
   justify-content: center;
   align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  position:relative;
+  position: relative;
 }
 
 #warn{
   font-size: 10px;
-    color: rgb(228, 70, 8);
+    color: rgb(235, 232, 49);
     text-align: center;
 }
  
-h1{
-    animation: 1.2s slideIn ease-in-out forwards 1s;
-    z-index: 20;
-    opacity: 0;
+tfoot,input, #addDrug{
+  border-radius: 30px;
+  padding: 7px;
+}
 
-}
-h1::before {
-    content: '';
-    width: 0%;
-    height: 5px;
-    position: absolute;
-    background-color: #e4f0ef;
-    bottom: 3px;
-    line-height: 1.2;
-    animation: 1s underline ease-in-out forwards 2s;
-    mix-blend-mode: screen;
-}
 
 @keyframes skewBg {
   0% {
@@ -166,17 +148,62 @@ h1::before {
   }
 }
 
-@media (max-width:600px){
-#table-list .inputs{
-    flex-direction: column; 
-    display:flex;
-}
-#table-list{
-  margin-top: 150px;
-}}
+@media only screen and (max-width: 1000px){
 
-tfoot,input, #addDrug{
-  border-radius: 30px;
-  padding: 7px;
+#table-list, thead, tbody, th, td, tr,.button{
+ display: block; 
+ position:relative;
 }
+
+.button {
+ margin-left:100px;
+ margin:2px;
+ padding:3px;
+  
+}
+thead tr {
+  display:none
+};
+                
+tr { 
+  border-bottom: 1px solid #ccc; 
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  padding-left: 50%; 
+}
+td:before { 
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px; 
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.inputs{
+  position: absolute;
+  margin: auto;
+  display: block;
+  top: 35%;
+  left: 40%;
+}
+
+tbody tr:hover {
+  background-color: transparent;
+}
+
+td:nth-of-type(2):before { content: "Drug Name"; }
+td:nth-of-type(3):before { content: "Category"; }
+td:nth-of-type(4):before { content: "Exp Date"; }
+td:nth-of-type(5):before { content: "Drug Info"; }
+td:nth-of-type(6):before { content: "Amount"; }
+td:nth-of-type(7):before { content: "Save"; }
+
+}
+
 
