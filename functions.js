@@ -4,6 +4,7 @@ import { populateCurrentDrug } from './edit-delete.js';
 
 export let allDrugs = [];
 
+
 export function insertDrugs(drugs) {
     const tbody = document.querySelector('#table-list tbody');
     tbody.innerHTML = getDrugsHTML(drugs);
