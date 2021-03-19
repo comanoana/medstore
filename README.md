@@ -2,14 +2,14 @@
 Inventory-app
 
 ## Team
-- <a target="_blank" href="https://github.com/bilcadina">Bîlc Adina</a>
-- <a target="_blank" href="https://github.com/comanoana">Coman Oana</a>
-- <a target="_blank" href="https://github.com/vbianca">Vesa Bianca</a>
+- [Bîlc Adina](https://github.com/bilcadina)
+- [Coman Oana](https://github.com/comanoana)
+- [Vesa Bianca](https://github.com/vbianca)
 
 ## Live Preview
 - [Demo](https://comanoana.github.io/medstore/)
 
-### TODO
+## TODO
 - [x] create a table in html
 - [x] table headers-[Drug name, Category, prospectus links, expiration date]
 - [x] add a json file with drugs
@@ -21,14 +21,14 @@ Inventory-app
 - [x] add three buttons in html [expired,unexpired,all]
 - [x] add functionality for the expired/unexpired/all buttons in js
 
-#### FEATURES
+## FEATURES
 
 - [x] Main screen appearing with the drugs table
 - [x] Search for drug 
 - [x] Expired, unexpired, show all buttons
 - [x] Add drug with name, category, date, amount 
 
-##### Start app
+## Start app
 
 - in Xampp - start Apache , MySQL
 - open [node-api-medstore](https://github.com/comanoana/node-api-medstore) folder in visual studio
