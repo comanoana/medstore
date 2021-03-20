@@ -1,11 +1,10 @@
 body {
     font-weight: 100;
-    background-image: url(./images/healthcare.jpg);
+    background-image: url(./images/medical-pills.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
-  
   th,td {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.699);
@@ -30,8 +29,12 @@ body {
   }
 
 #table-list{
-    border-collapse: collapse;
-    margin: auto;
+ 
+   border-collapse: collapse;
+   margin-top: 16%;
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-bottom: 5%;;
 }
 
 .inputs{
@@ -40,8 +43,8 @@ body {
   display: inline;
   justify-content: center;
   width: 70%;
-  left: 15%;
-  top: 45%;
+  left: 17%;
+  top:25%;
 }
 
 tr, th, td,tfoot{
@@ -57,7 +60,7 @@ tr, th, td,tfoot{
     margin-left: 1%;
     cursor: pointer;
     color: black;
-    background-color:rgba(233, 236, 207, 0.747);
+    background-color:#cfe0e8d7;
     transition: background-color.5s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -73,11 +76,11 @@ tr, th, td,tfoot{
 }
 
 h1{
-    padding: 20px;
-    font-size:40px;
     color:white;
+    
+    font-size:40px;
     position: absolute;
-    top: 15%;
+    top: 10%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     animation: 1.2s slideIn ease-in-out forwards 1s;
@@ -92,22 +95,21 @@ h1{
 h1::before {
   content: '';
   width: 0%;
-  height: 45px;
+  height: 5px;
   line-height: 1.2;
   position: absolute;
-  background-color:rgba(228, 68, 76, 0.815);
   bottom: 25px;
   animation: 2s underline ease-in-out forwards 4s;
   mix-blend-mode: screen;
 }
 
 .title {
-  top:4px;
-  min-height: 30vh;
+  top:18px;
+  min-height:10%;
   width:25%;
-  left:30%;
+  left:35%;
   display: flex;
-  padding: 100px;
+  padding: 30px;
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -155,6 +157,9 @@ tfoot,input, #addDrug{
  position:relative;
 }
 
+#table-list{
+  margin-top:70%;
+}
 .button {
  margin-left:100px;
  margin:2px;
@@ -189,8 +194,8 @@ td:before {
   position: absolute;
   margin: auto;
   display: block;
-  top: 35%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
 }
 
 tbody tr:hover {
