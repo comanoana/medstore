@@ -31,6 +31,8 @@ export const API = {
 //for demo purposes..
 if (location.host === "comanoana.github.io") {
     API.READ.URL = "store.json";
+    API.EXPIRED.URL = "expired.json"
+    API.UNEXPIRED.URL = "unexpired.json"
 }
 
 const search = document.getElementById('search');

@@ -17,10 +17,12 @@
     </div>
 
     <div class="inputs">
-        <i class="fa fa-search"></i> <input type="text" placeholder="search" id="search">
-        <input type="button" class="button" value="Expired" id="expiredBtn">
-        <input type="button" class="button" value="Not expired" id="notExpiredBtn">
-        <input type="button" class="button" value="Show all" id="allBtn">
+        <div class="inputs-child">
+            <i class="fa fa-search"></i> <input type="text" placeholder="search" id="search">
+            <input type="button" class="button" value="Expired" id="expiredBtn">
+            <input type="button" class="button" value="Not expired" id="notExpiredBtn">
+            <input type="button" class="button" value="Show all" id="allBtn">
+    </div>
     </div>
     
     <table id="table-list">
@@ -62,9 +64,11 @@
             </tr>
         </tfoot>
     </table>
+    
     <script type="module" src="functions.js"></script>
     <script type="module" src="search-save.js"></script>
     <script type="module" src="edit-delete.js"></script>
+
 </body>
 
 </html>
