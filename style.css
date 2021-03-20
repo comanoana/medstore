@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
-  
+
   th,td {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.699);
@@ -17,7 +17,7 @@ body {
     text-align: left;
   }
   thead th {
-    background-color:#b6c6fce5;
+    background-color:#f9d5e5;
     color:rgba(2, 1, 1, 0.733);
   }
   
@@ -58,7 +58,7 @@ body {
     margin-left: 1%;
     cursor: pointer;
     color: black;
-    background-color:#cfe0e8d7;
+    background-color:#cfe0e8de;
     transition: background-color.5s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -89,6 +89,7 @@ h1::before {
 }
 
 .title {
+  margin-top:5% ;
   margin-left: 20%;
   margin-right: 20%;
   display: flex;
