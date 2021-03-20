@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+
   th,td {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.699);
@@ -23,33 +24,30 @@ body {
   tbody tr:hover {
     background-color: rgb(240, 1, 9);
   }
-  
-  tbody td {
-    position: relative;
-  }
 
-#table-list{
- 
-   border-collapse: collapse;
-   margin-top: 16%;
-   margin-left: 15%;
-   margin-right: 15%;
-   margin-bottom: 5%;;
+#table-list {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.inputs{
-  position: absolute;
-  margin: auto;
-  display: inline;
+.inputs-child {
+  display: flex;
   justify-content: center;
-  width: 70%;
-  left: 17%;
-  top:25%;
 }
 
-tr, th, td,tfoot{
-    padding: 10px;
-    text-align: left;
+.fa-search {
+  margin-top: 1.5%;
+}
+
+.inputs {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .button{ 
@@ -75,19 +73,6 @@ tr, th, td,tfoot{
     color:rgb(175, 95, 95);
 }
 
-h1{
-    color:white;
-    
-    font-size:40px;
-    position: absolute;
-    top: 10%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    animation: 1.2s slideIn ease-in-out forwards 1s;
-    z-index: 20;
-    opacity:0;
-}
-
 #search {
   margin-right: 3%;
 }
@@ -104,16 +89,18 @@ h1::before {
 }
 
 .title {
-  top:18px;
-  min-height:10%;
-  width:25%;
-  left:35%;
+  margin-left: 20%;
+  margin-right: 20%;
   display: flex;
-  padding: 30px;
   justify-content: center;
-  align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
+  color:white;
+  font-size: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 20;
+  opacity:0;
 }
 
 #warn{
@@ -154,18 +141,20 @@ tfoot,input, #addDrug{
 
 #table-list, thead, tbody, th, td, tr,.button{
  display: block; 
- position:relative;
+ position: relative;
 }
 
 #table-list{
-  margin-top:70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 .button {
  margin-left:100px;
  margin:2px;
  padding:3px;
-  
 }
+
 thead tr {
   display:none
 };
@@ -191,11 +180,12 @@ td:before {
 }
 
 .inputs{
-  position: absolute;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputs-child {
   display: block;
-  top: 30%;
-  left: 30%;
 }
 
 tbody tr:hover {
