@@ -1,6 +1,6 @@
 body {
     font-weight: 100;
-    background-image: url(./images/medical-pills.jpg);
+    background-image: url(./images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,12 +17,12 @@ body {
     text-align: left;
   }
   thead th {
-    background-color:#f9d5e5;
+    background-color:#fdffaa;
     color:rgba(2, 1, 1, 0.733);
   }
   
   tbody tr:hover {
-    background-color: rgb(240, 1, 9);
+    background-color: #ffffde;
   }
 
 #table-list {
@@ -58,7 +58,7 @@ body {
     margin-left: 1%;
     cursor: pointer;
     color: black;
-    background-color:#cfe0e8de;
+    background-color:#dcfdff;
     transition: background-color.5s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -105,8 +105,7 @@ h1::before {
 }
 
 #warn{
-  font-size: 10px;
-    color: rgb(235, 232, 49);
+   color:#fa6500;
     text-align: center;
 }
  

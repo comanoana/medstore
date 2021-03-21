@@ -54,7 +54,7 @@ function getDrugHTML(drug) {
        <td></td>
         <td>${drug.drugName}</td>
         <td>${drug.category}</td>
-        <td>${date}<span id="warn" style='font-size:20px;display:${isExpired}'>&#9888;</span></td>
+        <td>${date}<span id="warn" style='font-size:20px;display:${isExpired}'>    &#9888;</span></td>
         <td><a target="_blank" href="${drug.link}">Prospectus</a></td>
         <td>${drug.amount}</td>
         <td>
